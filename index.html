@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+    <title>Energy meter</title>
+  </head>
+  <body>
+    <div id="welcome"></div>
+
+    <header>
+      <div id="head">
+        <h1 id="headTitle" class="head">Smart Energy Meter</h1>
+        <p id="headText" class="head">
+           Electricity E-pay.
+        </p>
+      </div>
+      <div onclick="showMenu()" id="menuBtn">MENU</div>
+      <nav>
+        <a href="#buyNow">Buy now</a>
+        <a onclick="showRegHead()" id="registerHead" href="#registerDiv"
+          >Register</a
+        >
+        <a onclick="showLogHead()" id="loginHead" href="#loginDiv">Login</a>
+        <a href="#contactUs">Contact us</a>
+      </nav>
+    </header>
+    <div id="menuDiv">
+      <div onclick="closeMenu()" id="menuDisable"></div>
+      <div id="menuMain">
+        <h4 class="menulist">MENU</h4>
+        <h4 onclick="closeMenu()" class="menulist">
+          <a href="#buyNow">Buy Now</a>
+        </h4>
+        <h4 onclick="closeMenu(),showLogHead()" class="menulist" id="menuLogin">
+          <a href="#loginDiv">Login</a>
+        </h4>
+        <h4 class="menulist" id="menuRegister">
+          <a onclick="closeMenu(),showRegHead()" href="#registerDiv"
+            >Register</a
+          >
+        </h4>
+        <h4 class="menulist" id="menuContactUs">
+          <a onclick="closeMenu()" href="#contactUs">Contact Us</a>
+        </h4>
+      </div>
+    </div>
+    <div id="welcomeTxt">
+      This platform is intended to help the user to interact with their
+      electric<br />
+      energy meter using their smartphones wherever they are located.
+    </div>
+
+    <div class="quickStart">
+      <h4>Quick Start</h4>
+      <p>
+        Enter your email, name, or meter number to process information more
+        quickly!
+      </p>
+      <div id="quickStart">
+        <input
+          class="inputsText"
+          id="mainInput"
+          type="text"
+          placeholder="Enter your username/id number/ email"
+        />
+        <button class="btn" id="btnProceed" type="submit">Proceed</button>
+      </div>
+    </div>
+    <div id="buyNow">
+      <h4>BUY NOW</h4>
+      <div class="buyNowInputs">
+        <input
+          style="width: 70%; margin-left: 20px"
+          class="inputsText"
+          type="tel"
+          placeholder="Enter your CounterID number"
+        />
+        <button class="btn">Continue</button>
+      </div>
+
+      <div>
+        <p>
+          <span class="grid1">Meter Registered Name:</span
+          ><span class="grid2"></span>
+        </p>
+        <p><span class="grid1">Status:</span><span class="grid2"></span></p>
+        <p>
+          <span class="grid1">Meter Number:</span><span class="grid2"></span>
+        </p>
+      </div>
+    </div>
+    <form>
+      <div id="buttons">
+        <span id="registerBtn">Register</span>
+        <span>|</span>
+        <span onclick="showLoginDiv()" id="loginBtn">Login</span>
+      </div>
+
+      <div id="user">
+        <div id="registerDiv">
+          <label
+            >Name<input
+              class="inputsText"
+              type="name"
+              placeholder="Enter your  full name"
+            />
+          </label>
+          <label
+            >ID<input
+              class="inputsText"
+              type="tel"
+              placeholder="enter your ID number"
+          /></label>
+          <label
+            >Meter Number<input
+              class="inputsText"
+              type="tel"
+              placeholder="Enter your counter number"
+          /></label>
+          <button class="btn">Submit</button>
+          <p>
+            If you already have an account,
+            <a class="same-color" href="#loginDiv">Click here to login</a>
+          </p>
+        </div>
+        <div id="loginDiv">
+          <label
+            >Email
+            <input
+              class="inputsText"
+              type="email"
+              placeholder="Enter your email"
+            />
+          </label>
+
+          <label>
+            Passowrd
+            <input
+              class="inputsText"
+              type="password"
+              placeholder="Enter your password"
+            />
+          </label>
+          <button class="btn">Submit</button>
+          <div>
+            You don't have an account?
+            <a class="same-color" href="#registerDiv">Register here</a>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div id="contactUs">
+      <div>
+        <h3>BICE MECHATROTECH GROUP</h3>
+        <p>IPRC KIGALI</p>
+      </div>
+      <div class="links same-color">
+        <h4>Links</h4>
+        <a href="#buyNow">Buy Now</a>
+        <a href="#loginDiv">Login</a>
+        <a href="#registerDiv">Register</a>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <ul>
+          <li>+250 787 414 868</li>
+          <li>bicemechatrotech@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>

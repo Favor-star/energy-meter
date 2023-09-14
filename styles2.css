@@ -1,0 +1,143 @@
+* {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.6em;
+}
+@media screen and (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+    font-size: auto;
+  }
+  html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+  }
+  body {
+    padding: 15px;
+    margin: 5px;
+    width: 100vw;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  #headTitle {
+    font-size: 1.8em;
+    /* border: 1px solid red; */
+  }
+  #headText {
+    font-size: .9em;
+  }
+
+  #menuDiv {
+    /* z-index: 999; */
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0);
+    position: absolute;
+    /* opacity: .7; */
+    top: 0;
+    left: 100%;
+    display: none;
+  }
+  .menuClicked {
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out 0ms;
+    position: sticky;
+  }
+  #menuMain {
+    width: 80%;
+    height: 100%;
+    background-color: var(--second);
+    float: right;
+    margin-right: 0;
+    padding: 5px 0 0 0;
+  }
+  .menulist {
+    border-bottom: 2px solid var(--main);
+    padding-left: 30px;
+    padding: 20px auto;
+    margin: 30px 0;
+    text-transform: uppercase;
+  }
+  #menuBtn {
+    color: var(--second);
+    font-weight: 700;
+    font-size: large;
+    padding: 5px;
+  }
+  .menulist:first-of-type {
+    text-align: center;
+    /* border-bottom: none; */
+  }
+  #menuDisable {
+    opacity: 0.08;
+    height: 100%;
+    width: 20%;
+    float: left;
+  }
+  #quickStart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #quickStart input {
+    width: 100%;
+  }
+  .buyNowInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+  .buyNowInputs input {
+    width: 100%;
+  }
+  #registerDiv {
+    width: 100%;
+    /* border: 1px solid cyan; */
+  }
+  form {
+    width: 90vw;
+    /* border: 1px solid blue; */
+  }
+  #user {
+    width: 100%;
+  }
+  label {
+    width: 100%;
+    /* border: 2px dashed yellow; */
+  }
+  #contactUs {
+    width: 99vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+    /* border: 1px solid blue; */
+  }
+  #contactUs div {
+    margin:0;
+    padding: 0;
+  }
+
+}

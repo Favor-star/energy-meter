@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  background-color: VAR(--main);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --main: #ffffff;
+  --second: #3e8241;
+  --third: #6948a3;
+  --inputs: gray;
+  --shadow: rgba(0, 0, 0, 0.666);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+  margin: 0 20px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: first baseline;
+  width: 1--5;
+  margin: 0 10px;
+  border-bottom: 5px solid var(--second);
+  /* box-shadow: 0 5px 4px var(--shadow); */
+}
+.head {
+  margin: 0;
+  padding: 0;
+}
+#head {
+  margin-bottom: 40px;
+}
+#headTitle {
+  color: var(--second);
+}
+#headText {
+  font-style: italic;
+  color: var(--third);
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-transform: uppercase;
+  flex-shrink: 1;
+}
+nav a {
+  color: var(--second);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 7px;
+  border-radius: 5px;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: var(--main);
+  background-color: var(--second);
+}
+
+/*header*/
+#welcome {
+  margin-bottom: 0px;
+}
+#welcomeTxt {
+  font-weight: 700;
+  color: var(--second);
+  margin: 30px 0 70px 0;
+}
+#quickStart {
+  display: flex;
+  flex-direction: row;
+  background-color: inherit;
+}
+.quickStart {
+  background-color: var(--second);
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 4px var(--shadow);
+}
+.quickStart h4 {
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  color: var(--main);
+}
+.quickStart p {
+  background-color: inherit;
+  color: var(--main);
+}
+#buyNow {
+  border: 2px solid var(--second);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 4px var(--shadow);
+  margin-top: 70px;
+  padding-top: 0;
+
+  overflow: hidden;
+}
+#buyNow h4 {
+  background-color: var(--second);
+  margin-top: 0;
+  text-align: center;
+  padding: 10px;
+  color: var(--main);
+  font-weight: 700;
+}
+#buyNow p {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+}
+.grid1 {
+  text-align: end;
+  font-weight: 700;
+  color: var(--third);
+}
+.grid2 {
+  text-align: start;
+  color: var(--main);
+  /* background-color: var(--second); */
+  display: inline-block;
+  width: fit-content;
+  font-style: oblique;
+  padding-left: 2px;
+  padding-right: 3px;
+  border-radius: 2.5px;
+  /* box-shadow: 1px 1px 2px 2px var(--shadow); */
+}
+
+form {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+}
+#user {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: auto;
+  border: none;
+}
+#registerDiv {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+}
+
+.inputsText::placeholder:first-of-type {
+  color: var(--second);
+}
+#mainInput {
+  width: 50%;
+  background-color: var(--main);
+  margin-right: 20px;
+}
+.inputsText {
+  height: 40px;
+  /* width: 100%; */
+  border: 2px solid var(--second);
+  /* background-color: var(--second); */
+  /* background-image: linear-gradient(to right, var(--inputs), var(--main), var(--inputs)); */
+  color: var(--second);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.inputsText::placeholder {
+  color: var(--second);
+  font-style: italic;
+}
+.inputsText:focus {
+  inset: unset;
+  border: none;
+  outline: 3px solid var(--third);
+  background-color: var(--main);
+  color: var(--second);
+}
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  color: var(--third);
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn {
+  width: 90px;
+  height: 40px;
+  background-color: var(--third);
+  border: none;
+  border-radius: 7px;
+  color: var(--main);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#contactUs {
+  background-color: var(--second);
+  color: var(--main);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+#contactUs div,
+#contactUs h3,
+#contactUs p,
+#contactUs ul,
+#contactUs ul li {
+  background-color: inherit;
+  list-style-type: none;
+}
+h4,
+a {
+  background-color: inherit;
+  color: var(--main);
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.same-color {
+  color: var(--second);
+}
+#menuDiv {
+  display: none;
+}
+#menuBtn {
+  display: none;
+}
